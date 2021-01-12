@@ -38,16 +38,35 @@ h2 {
     /* Flex flow - column o row y wrap, nowrap o wrap-reverse */
     flex-flow: row wrap;
 
+
+    /* Alinear elementos */ 
+    /*
+        flex-start
+        flex-end
+        center
+        space-around
+        space-between
+    */
+    justify-content: space-between;
+
+    /* Align items para elementos verticalmente*/
+    height: 400px;
+    align-items: flex-start; /* Los alinea en la parte superior */
+    align-items: flex-end; /* Los alinea en la parte de abajo */
+    align-items: baseline; /**/
+    align-items: center;
+
 }
 
 .elemento-flex {
     padding: 10px;
     /* Flex:  toma 3 parametros: 1) flex-grow: 2) flex-shrink: 3) flex-basis: */
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
 }
 
 .elemento-flex:nth-child(1) {
     background-color: #E53935;
+    align-self: flex-start; /* Es para poner en la partr que quiera el elemento */
 }
 
 .elemento-flex:nth-child(2) {
